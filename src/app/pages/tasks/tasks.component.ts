@@ -39,4 +39,12 @@ export class TasksComponent {
   startEdit(e:any) {
     console.log("onRowClick");
   }
+
+  startEditCell(e:any) {
+    console.log("onCellClick");
+  }
+
+  validateRemove(e:any) {
+    console.log("onRowRemoving");
+  }
 }

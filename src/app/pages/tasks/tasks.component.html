@@ -8,6 +8,8 @@
   [columnAutoWidth]="true"
   [columnHidingEnabled]="true">
   (onRowClick)="startEdit($event)"
+  (onCellClick)="startEditCell($event)"
+  (onRowRemoving)="validateRemove($event)"
 
   <dxo-paging [pageSize]="10"></dxo-paging>
   <dxo-pager [showPageSizeSelector]="true" [showInfo]="true"></dxo-pager>
